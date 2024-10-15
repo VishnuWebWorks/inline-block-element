@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Block and Inline Elements</title>
+
+    <style>
+        div {
+            width: 30%;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        /* inline element */
+        i,
+        strong,
+        small,
+        sub,
+        sup {
+            background-color: rgb(255, 252, 50);
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .box p {
+            background-color: aqua;
+        }
+
+        .para a {
+            background-color: orange;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The block level elements are converted to inline-block</h1>
+    <div style="background-color: rgb(255, 54, 54);">
+        <h1>Block level Elements</h1>
+        <p>address, article, aside, blockquote, canvas, dd, div, dl, dt, fieldset,
+            figcaption, figure, footer, form, h1 to h6, hr, li, main, nav, noscript,
+            ol, p, pre, section, table, tfoot, ul, video
+        </p>
+    </div>
+
+    <div style="background-color: rgb(62, 62, 255);">
+        <h1>Inline Elements</h1>
+        <p>a, abbr, acronym, b, bdo, big, br, button, cite, code,
+            dfn, em, i, img, input, kbd, lable, map, object, output, q, samp,
+            script, select, small, span, strong, sub, sup,
+            textarea, time, tt, var
+        </p>
+    </div>
+
+
+    <p>This is paragraph but inside of inline tag (anchor) declaraction no line break <a href="index.html">anchor tag
+            inside of block level element</a>😇</p>
+
+
+
+    <h2>this is another example <i>example</i></h2>
+    <p>another example <button>button inside declared</button></p><button>button outside declared</button>
+
+    <h1>Inline Elements</h1>
+
+    <!-- In  inline we cant add height and width But we can add margin and padding 
+     but it work in horizantaliy-->
+    <p><i>inline element</i><strong>This is also inline element</strong><small>another inline
+            element</small><sub>inline</sub><sup>element</sup></p>
+
+    <div class="box">
+        <h1>Block level element to Inline Element</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sed voluptates necessitatibus dignissimos
+            enim labore! Corrupti iusto distinctio soluta incidunt error voluptatem saepe itaque, nulla ipsam
+            voluptatibus, praesentium, quas facilis!</p>
+    </div>
+    <h1>This is inline element converted to blocklevel element</h1>
+    <div class="para">
+        <a href="index.html">This is inline element </a>
+        <div class="para">
+
+</body>
+
+</html>
